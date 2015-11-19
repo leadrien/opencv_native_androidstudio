@@ -11,7 +11,7 @@ Here is how to use this project to run native OpenCV code.
 * Download latest OpenCV SDK for Android from OpenCV.org and decompress the zip file.
 * Clone this project
 * Create a symlink named `jniLibs` in `app/src/main` that points to `$OPENCV_SDK/sdk/native/libs`
-* In `app/build.gradle` change lines 29 and 30 to points to your OPENCV_SDK
+* In `app/build.gradle` change line 25 to points to your OPENCV_SDK
 * Sync gradle
 * Run the application
 
@@ -29,9 +29,13 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
 * Make a symlink named `jniLibs` in `app/src/main` that points to `OPENCV_SDK/sdk/native/libs`
 
 * In application build.gradle use `grandle-experimental:0.3.alpha7`
+* 
  replace
+
      `classpath 'com.android.tools.build:gradle:1.3.0'`
+     
  with
+ 
      `classpath 'com.android.tools.build:gradle-experimental:0.3.0-alpha7'`
 
 
@@ -67,7 +71,7 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
     }
 ```
 
-* In app `build.gradle`: use the `model` plugin, make sure you use java 7, add opencv native stuff, remove unused
+* In app `build.gradle`: use the `model` plugin, add opencv native stuff, remove unused
   dependencies
 
  Remove the following lines:
@@ -79,10 +83,34 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
 ```
 
 And add OpenCV stuff:
- See the file [here](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/build.gradle)
- (You have to set the OpenCV SDK location in it)
+```
+def openCVAndroidSdkDir = "/opt/opencv-android-sdk-v3.0/sdk/native"
+    android.ndk {
+        moduleName = "native"
+        cppFlags += "-I${file(openCVAndroidSdkDir + "/jni/include")}".toString()
+        cppFlags += "-frtti"
+        cppFlags += "-fexceptions"
+        ldLibs += ["log", "opencv_java3"]
+        stl    = "gnustl_static"
+    }
 
-
+    android.productFlavors {
+        // for detailed abiFilter descriptions, refer to "Supported ABIs" @
+        // https://developer.android.com/ndk/guides/abis.html#sa
+        create("arm") {
+            ndk.abiFilters += "armeabi"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/armeabi')}".toString()
+        }
+        create("arm7") {
+            ndk.abiFilters += "armeabi-v7a"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/armeabi-v7a')}".toString()
+        }
+        create("arm8") {
+            ndk.abiFilters += "arm64-v8a"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/arm64-v8a')}".toString()
+        }
+    }
+ ```
 
 * In the app module, delete the following files and folders:
 ```
@@ -110,10 +138,11 @@ And add OpenCV stuff:
     <uses-feature android:name="android.hardware.camera.front.autofocus"/>
 ```
 
-* [Here](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/src/main/java/ch/hepia/lsn/opencvnative/MainActivity.java) is an example of the Activity.
+* [Here](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/src/main/java/ch/hepia/lsn/opencv_native_androidstudio/MainActivity.java) is an example of the Activity.
 
 
 * In `app/src/main` add a new directory named `jni`
+* 
   Create a new cpp class, named `native_opencv.h` `native_opencv.cpp`
 
-* [Here](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/src/main/jni/mymodule.cpp) is an example of C++ code that add random noise to a frame
+* [Here](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/src/main/jni/native_opencv.cpp) is an example of C++ code that add random noise to a frame
