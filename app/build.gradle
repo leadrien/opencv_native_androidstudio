@@ -1,0 +1,56 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 19
+        buildToolsVersion = "19.1.0"
+
+        defaultConfig.with {
+            applicationId = "ch.hepia.lsn.opencv_native_androidstudio"
+            minSdkVersion.apiLevel = 19
+            targetSdkVersion.apiLevel = 19
+            versionCode = 1
+            versionName = "1.0"
+        }
+    }
+
+    android.buildTypes {
+        release {
+            // minifyEnabled = false
+            // proguardFiles = getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    def openCVAndroidSdkDir = "/opt/opencv-android-sdk-v3.0/sdk/native"
+    android.ndk {
+        moduleName = "native"
+        cppFlags += "-I${file(openCVAndroidSdkDir + "/jni/include")}".toString()
+        cppFlags += "-frtti"
+        cppFlags += "-fexceptions"
+        ldLibs += ["log", "opencv_java3"]
+        stl    = "gnustl_static"
+    }
+
+    android.productFlavors {
+        // for detailed abiFilter descriptions, refer to "Supported ABIs" @
+        // https://developer.android.com/ndk/guides/abis.html#sa
+        create("arm") {
+            ndk.abiFilters += "armeabi"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/armeabi')}".toString()
+        }
+        create("arm7") {
+            ndk.abiFilters += "armeabi-v7a"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/armeabi-v7a')}".toString()
+        }
+        create("arm8") {
+            ndk.abiFilters += "arm64-v8a"
+            ndk.ldFlags += "-L${file('src/main/jniLibs/arm64-v8a')}".toString()
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':openCVLibrary300')
+}
