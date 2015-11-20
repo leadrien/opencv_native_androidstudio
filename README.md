@@ -11,13 +11,13 @@ Here is how to use this project to run native OpenCV code.
 * Download latest OpenCV SDK for Android from OpenCV.org and decompress the zip file.
 * Clone this project
 * Create a symlink named `jniLibs` in `app/src/main` that points to `$OPENCV_SDK/sdk/native/libs`
-* In `app/build.gradle` change line 25 to points to your OPENCV_SDK
+* In `app/build.gradle` change line 25 to points to `$OPENCV_SDK/sdk/native`
 * Sync gradle
 * Run the application
 
 
 ## How to create the native OpenCV project from scratch
-Here is how I made this project.
+Here is how I made this project. If you simply want to run openCV with NDK support, use the previous **Usage** chapter. If you want to build the full project from scratch, you can follow the steps in this chapter.
 
 I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-android-studio), [this](http://stackoverflow.com/questions/32171259/opencv-with-android-studio-1-3-using-new-gradle-undefined-reference) and [that](https://github.com/jlhonora/opencv-android-sample)
 
@@ -28,7 +28,7 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
 
 * Make a symlink named `jniLibs` in `app/src/main` that points to `OPENCV_SDK/sdk/native/libs`
 
-* In application build.gradle use `grandle-experimental:0.3.alpha7`
+* In application build.gradle use `gradle-experimental:0.3.alpha7`
 * 
  replace
 
