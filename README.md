@@ -48,7 +48,7 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
     distributionUrl=https\://services.gradle.org/distributions/gradle-2.6-all.zip
 ```
 
-* In openCVLibrary module, use the `model` plugin and make sure you use java 7
+* In openCVLibrary module [build.gradle](https://github.com/leadrien/opencv_native_androidstudio/blob/master/openCVLibrary300/build.gradle), use the `model` plugin and make sure you use java 7
 ```
     apply plugin: 'com.android.model.library'
 
@@ -71,8 +71,7 @@ I used mostly [this](http://stackoverflow.com/questions/27406303/opencv-in-andro
     }
 ```
 
-* In app `build.gradle`: use the `model` plugin, add opencv native stuff, remove unused
-  dependencies
+* In app [build.gradle](https://github.com/leadrien/opencv_native_androidstudio/blob/master/app/build.gradle): use the `model` plugin, add opencv native stuff, remove unused dependencies.
 
  Remove the following lines:
  
@@ -111,6 +110,9 @@ def openCVAndroidSdkDir = "/opt/opencv-android-sdk-v3.0/sdk/native"
         }
     }
  ```
+
+I also use SDK compileSdkVersion=19 with buildToolsVersion="19.1.0" otherwise I have a `rand()` not found when the application runs on Android 4.
+
 
 * In the app module, delete the following files and folders:
 ```
