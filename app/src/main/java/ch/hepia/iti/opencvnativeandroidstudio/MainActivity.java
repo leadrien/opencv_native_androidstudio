@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
             switch (status) {
                 case LoaderCallbackInterface.SUCCESS: {
                     Log.i(TAG, "OpenCV loaded successfully");
+                    // Load ndk built module, as specified in moduleName in build.gradle
+                    // after opencv initialization
+                    System.loadLibrary("native-lib");
                     _cameraBridgeViewBase.enableView();
                 }
                 break;
@@ -39,10 +42,6 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Load ndk built module, as specified
-        // in moduleName in build.gradle
-        System.loadLibrary("native-lib");
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         setContentView(R.layout.activity_main);
