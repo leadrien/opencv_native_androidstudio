@@ -1,7 +1,7 @@
 Native OpenCV with Android Studio
 =================================
 
-This application is a sample Android Studio project (tested on version 2.3) with native OpenCV.
+This application is a sample Android Studio project (tested on version 3.0) with native OpenCV.
 
 It gets the camera frames, make JNI calls with its gray matrices references as parameters, add some random noise to the images from a C++ method, and render the generated frames.
 
@@ -45,11 +45,10 @@ Here is how I made this project. If you simply want to run openCV with NDK suppo
   Edit `openCVLibrary300/build.gradle` to fit your SDK:
 
   ```
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 26
     }
   ```
 
@@ -83,19 +82,19 @@ Here is how I made this project. If you simply want to run openCV with NDK suppo
 
 * Configure the `CMakeLists.txt` file
   * After the `cmake_minimum_required`, add
-    
+
     ```
     include_directories(YOUR_OPENCV_SDK/sdk/native/jni/include)
     add_library( lib_opencv SHARED IMPORTED )
     set_target_properties(lib_opencv PROPERTIES IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libopencv_java3.so)
     ```
-    
+
   * At the end of the file add `lib_opencv` to the `target_link_libraries` list
 
 
 * Grant camera permission
   * Add the following lines in the `AndroidManifest.xml` file
-   
+
     ```
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera"/>
