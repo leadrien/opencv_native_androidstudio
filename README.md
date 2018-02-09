@@ -37,7 +37,7 @@ Here is how I made this project. If you simply want to run openCV with NDK suppo
 
 * Import OpenCV library module
   * New -> Import Module
-  * Choose the `/opt/opencv-android-sdk-v3.0/sdk/java` folder
+  * Choose the `YOUR_OPENCV_SDK/sdk/java` folder
   * Unckeck replace jar, unckeck replace lib, unckeck create gradle-style
 
 * Set the OpenCV library module up to fit your SDK
