@@ -7,7 +7,7 @@ It gets the camera frames, make JNI calls with its gray matrices references as p
 
 It works with Android Studio 3+
 
-Last included OpenCV version: 3.4.1
+Last included OpenCV version: 3.4
 
 
 
