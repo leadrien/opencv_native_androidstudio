@@ -1,0 +1,21 @@
+{
+  "buildFiles": [
+    "F:\\3.1\\Git\\opencv_native_androidstudio\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\Ehsan\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\3.1\\Git\\opencv_native_androidstudio\\app\\.cxx\\cmake\\debug\\x86 --target clean"
+  ],
+  "libraries": {
+    "lib_opencv-Debug-x86": {
+      "artifactName": "lib_opencv",
+      "abi": "x86",
+      "output": "F:\\3.1\\Git\\opencv_native_androidstudio\\app\\src\\main\\jniLibs\\x86\\libopencv_java3.so"
+    },
+    "native-lib-Debug-x86": {
+      "artifactName": "native-lib",
+      "buildCommand": "C:\\Users\\Ehsan\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\3.1\\Git\\opencv_native_androidstudio\\app\\.cxx\\cmake\\debug\\x86 --target native-lib",
+      "abi": "x86",
+      "output": "F:\\3.1\\Git\\opencv_native_androidstudio\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libnative-lib.so"
+    }
+  }
+}

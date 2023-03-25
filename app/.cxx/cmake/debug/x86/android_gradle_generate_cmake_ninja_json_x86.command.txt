@@ -1,0 +1,15 @@
+Executable : C:\Users\Ehsan\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HF:\3.1\Git\opencv_native_androidstudio\app
+-BF:\3.1\Git\opencv_native_androidstudio\app\.cxx\cmake\debug\x86
+-DANDROID_ABI=x86
+-DANDROID_PLATFORM=android-19
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=F:\3.1\Git\opencv_native_androidstudio\app\build\intermediates\cmake\debug\obj\x86
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=C:\Users\Ehsan\AppData\Local\Android\Sdk\ndk\25.2.9519653
+-DCMAKE_CXX_FLAGS=-frtti -fexceptions
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\Ehsan\AppData\Local\Android\Sdk\ndk\25.2.9519653\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\Ehsan\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
+-GAndroid Gradle - Ninja
+jvmArgs : 
+

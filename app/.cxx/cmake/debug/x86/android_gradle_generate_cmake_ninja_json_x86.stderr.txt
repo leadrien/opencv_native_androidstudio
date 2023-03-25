@@ -1,0 +1,121 @@
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/cmake/3.6.4111459/share/cmake-3.6/Modules/CMakeDetermineSystem.cmake:98 (include)
+  CMakeLists.txt
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+CMake Warning at C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android-legacy.toolchain.cmake:418 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/build/cmake/android.toolchain.cmake:54 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/3.6.0-rc2/CMakeSystem.cmake:6 (include)
+  F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
