@@ -1,0 +1,3 @@
+F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/native-lib.dir
+F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

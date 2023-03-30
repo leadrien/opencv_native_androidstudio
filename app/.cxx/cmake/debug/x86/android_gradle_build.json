@@ -1,0 +1,46 @@
+
+{
+	"buildFiles" : [ "F:/3.1/Git/opencv_native_androidstudio/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\Ehsan\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\3.1\\Git\\opencv_native_androidstudio\\app\\.cxx\\cmake\\debug\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"lib_opencv-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "lib_opencv",
+			"buildType" : "debug",
+			"output" : "F:/3.1/Git/opencv_native_androidstudio/app/src/main/jniLibs/x86/libopencv_java3.so",
+			"toolchain" : "1452042429"
+		},
+		"native-lib-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "native-lib",
+			"buildCommand" : "C:\\Users\\Ehsan\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build F:\\3.1\\Git\\opencv_native_androidstudio\\app\\.cxx\\cmake\\debug\\x86 --target native-lib",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android19 --sysroot=C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS -I..\\..\\..\\..\\YOUR_OPENCV_SDK\\sdk\\native\\jni\\include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -frtti -fexceptions -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "F:/3.1/Git/opencv_native_androidstudio/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "F:/3.1/Git/opencv_native_androidstudio/app/.cxx/cmake/debug/x86"
+				}
+			],
+			"output" : "F:/3.1/Git/opencv_native_androidstudio/app/build/intermediates/cmake/debug/obj/x86/libnative-lib.so",
+			"toolchain" : "1452042429"
+		}
+	},
+	"toolchains" : 
+	{
+		"1452042429" : 
+		{
+			"cCompilerExecutable" : "C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/Ehsan/AppData/Local/Android/Sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}
